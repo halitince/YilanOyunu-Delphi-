@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="pbahayaz_oyunnnModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="mesajlar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="mesaj" Type="String" MaxLength="512" FixedLength="true" Unicode="true" />
+    <Property Name="aktif" Type="Int16" Nullable="false" />
+    <Property Name="oyun" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="yilan_oyunu_skorlari">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="zaman" Type="DateTime" Precision="3" />
+    <Property Name="kullanici" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="skor" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="pbahayaz_oyunnnEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="mesajlar" EntityType="Self.mesajlar" />
+    <EntitySet Name="yilan_oyunu_skorlari" EntityType="Self.yilan_oyunu_skorlari" />
+  </EntityContainer>
+</Schema>

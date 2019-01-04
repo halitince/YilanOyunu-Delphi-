@@ -1,0 +1,10 @@
+D:\Halit\Project\VisualStudio\YilanOyunuServisi\Yilan\Yilan\bin\Yilan.dll.config
+D:\Halit\Project\VisualStudio\YilanOyunuServisi\Yilan\Yilan\bin\Yilan.dll
+D:\Halit\Project\VisualStudio\YilanOyunuServisi\Yilan\Yilan\bin\Yilan.pdb
+D:\Halit\Project\VisualStudio\YilanOyunuServisi\Yilan\Yilan\bin\EntityFramework.dll
+D:\Halit\Project\VisualStudio\YilanOyunuServisi\Yilan\Yilan\bin\EntityFramework.SqlServer.dll
+D:\Halit\Project\VisualStudio\YilanOyunuServisi\Yilan\Yilan\bin\EntityFramework.xml
+D:\Halit\Project\VisualStudio\YilanOyunuServisi\Yilan\Yilan\bin\EntityFramework.SqlServer.xml
+D:\Halit\Project\VisualStudio\YilanOyunuServisi\Yilan\Yilan\obj\Release\Yilan.dll
+D:\Halit\Project\VisualStudio\YilanOyunuServisi\Yilan\Yilan\obj\Release\Yilan.pdb
+D:\Halit\Project\VisualStudio\YilanOyunuServisi\Yilan\Yilan\obj\Release\Yilan.csprojResolveAssemblyReference.cache

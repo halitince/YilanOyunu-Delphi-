@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="pbahayaz_oyunnnModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="mesajlar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mesaj" Type="nchar" MaxLength="512" />
+    <Property Name="aktif" Type="smallint" Nullable="false" />
+    <Property Name="oyun" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="yilan_oyunu_skorlari">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="zaman" Type="datetime" />
+    <Property Name="kullanici" Type="varchar" MaxLength="25" />
+    <Property Name="skor" Type="int" />
+  </EntityType>
+  <EntityContainer Name="pbahayaz_oyunnnModelStoreContainer">
+    <EntitySet Name="mesajlar" EntityType="Self.mesajlar" Schema="pbahayaz_oyun12" store:Type="Tables" />
+    <EntitySet Name="yilan_oyunu_skorlari" EntityType="Self.yilan_oyunu_skorlari" Schema="pbahayaz_oyun12" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

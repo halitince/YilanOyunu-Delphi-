@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="yilanModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="yilan_mesajlar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mesaj" Type="nchar" MaxLength="512" Nullable="false" />
+    <Property Name="aktif" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="yilan_skorlar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="zaman" Type="datetime" Nullable="false" />
+    <Property Name="kullanici" Type="nchar" MaxLength="30" Nullable="false" />
+    <Property Name="skor" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="yilanModelStoreContainer">
+    <EntitySet Name="yilan_mesajlar" EntityType="Self.yilan_mesajlar" Schema="pbahayaz_projem" store:Type="Tables" />
+    <EntitySet Name="yilan_skorlar" EntityType="Self.yilan_skorlar" Schema="pbahayaz_projem" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

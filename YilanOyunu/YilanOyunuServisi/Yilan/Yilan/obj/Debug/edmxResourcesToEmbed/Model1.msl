@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="pbahayaz_oyunnnModelStoreContainer" CdmEntityContainer="pbahayaz_oyunnnEntities1">
+    <EntitySetMapping Name="mesajlar">
+      <EntityTypeMapping TypeName="pbahayaz_oyunnnModel.mesajlar">
+        <MappingFragment StoreEntitySet="mesajlar">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="mesaj" ColumnName="mesaj" />
+          <ScalarProperty Name="aktif" ColumnName="aktif" />
+          <ScalarProperty Name="oyun" ColumnName="oyun" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yilan_oyunu_skorlari">
+      <EntityTypeMapping TypeName="pbahayaz_oyunnnModel.yilan_oyunu_skorlari">
+        <MappingFragment StoreEntitySet="yilan_oyunu_skorlari">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="zaman" ColumnName="zaman" />
+          <ScalarProperty Name="kullanici" ColumnName="kullanici" />
+          <ScalarProperty Name="skor" ColumnName="skor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

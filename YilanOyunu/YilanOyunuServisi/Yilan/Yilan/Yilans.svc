@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Yilan.Yilans" CodeBehind="Yilans.svc.cs" %>
